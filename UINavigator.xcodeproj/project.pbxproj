@@ -13,6 +13,10 @@
 		2C36F28228316152005A344B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36F2702831614D005A344B /* ContentView.swift */; };
 		2C36F28328316152005A344B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C36F27128316151005A344B /* Assets.xcassets */; };
 		2C36F28428316152005A344B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C36F27128316151005A344B /* Assets.xcassets */; };
+		2C36F28F28316189005A344B /* SwiftUINavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 2C36F28E28316189005A344B /* SwiftUINavigator */; };
+		2C36F29128316247005A344B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36F29028316247005A344B /* ListView.swift */; };
+		2C36F29328316495005A344B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36F29228316495005A344B /* DetailView.swift */; };
+		2C36F29528317441005A344B /* LeadingNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36F29428317441005A344B /* LeadingNavigatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,9 @@
 		2C36F27628316152005A344B /* UINavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UINavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C36F27C28316152005A344B /* UINavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UINavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C36F27E28316152005A344B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2C36F29028316247005A344B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		2C36F29228316495005A344B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2C36F29428317441005A344B /* LeadingNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingNavigatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C36F28F28316189005A344B /* SwiftUINavigator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +65,9 @@
 				2C36F26F2831614D005A344B /* UINavigatorApp.swift */,
 				2C36F2702831614D005A344B /* ContentView.swift */,
 				2C36F27128316151005A344B /* Assets.xcassets */,
+				2C36F29028316247005A344B /* ListView.swift */,
+				2C36F29228316495005A344B /* DetailView.swift */,
+				2C36F29428317441005A344B /* LeadingNavigatorView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -94,6 +105,9 @@
 			dependencies = (
 			);
 			name = "UINavigator (iOS)";
+			packageProductDependencies = (
+				2C36F28E28316189005A344B /* SwiftUINavigator */,
+			);
 			productName = "UINavigator (iOS)";
 			productReference = 2C36F27628316152005A344B /* UINavigator.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 2C36F2692831614D005A344B;
+			packageReferences = (
+				2C36F28D28316189005A344B /* XCRemoteSwiftPackageReference "SwiftUINavigator" */,
+			);
 			productRefGroup = 2C36F27728316152005A344B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,7 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C36F28128316152005A344B /* ContentView.swift in Sources */,
+				2C36F29328316495005A344B /* DetailView.swift in Sources */,
 				2C36F27F28316152005A344B /* UINavigatorApp.swift in Sources */,
+				2C36F29128316247005A344B /* ListView.swift in Sources */,
+				2C36F29528317441005A344B /* LeadingNavigatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C36F28D28316189005A344B /* XCRemoteSwiftPackageReference "SwiftUINavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Open-Bytes/SwiftUINavigator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C36F28E28316189005A344B /* SwiftUINavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C36F28D28316189005A344B /* XCRemoteSwiftPackageReference "SwiftUINavigator" */;
+			productName = SwiftUINavigator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C36F26A2831614D005A344B /* Project object */;
 }

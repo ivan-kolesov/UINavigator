@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import SwiftUINavigator
 
 struct ContentView: View {
+    @EnvironmentObject private var navigator: Navigator
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Button(action: {
+                navigator.navigate(type: .push(id: "List")) {
+                    ListView()
+                }
+            }, label: {
+                Text("Go list view")
+            })
+        }
     }
 }
 

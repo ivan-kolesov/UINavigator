@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import SwiftUINavigator
 
 @main
 struct UINavigatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigatorView(
+                showDefaultNavBar: false
+            ) {
+                ContentView()
+            }
         }
     }
 }

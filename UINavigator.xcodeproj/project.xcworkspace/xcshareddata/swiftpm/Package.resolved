@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftuinavigator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Open-Bytes/SwiftUINavigator",
+      "state" : {
+        "revision" : "8864f6a562df9ac545d544e307b8a0d405a97d9b",
+        "version" : "0.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}
